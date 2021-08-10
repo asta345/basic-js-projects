@@ -8,7 +8,7 @@
      var targetSection = document.getElementById(targetSectionID);
      var interval = setInterval(function(){
         var targetSectionCoordinates = targetSection.getBoundingClient();
-        if(targetSectionCoordinates.top <=0){
+       
           if(targetSectionCoordinates.top <=0){
             clearInterval(interval);
           }
