@@ -21,4 +21,12 @@ function scrollvertcially(targetSection){
           }
        window.scrollBy(0,50);
         },20);
-                                         
+     
+
+\skills progress  function\
+var progressbars =document.querySelector('.skill-progress>div');
+var skillcontainers=document.getElementById('skills-container');
+window.addEventListener('scroll,checkScroll);
+                        
+function checkScroll()
+
