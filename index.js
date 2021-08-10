@@ -27,6 +27,16 @@ function scrollvertcially(targetSection){
 var progressbars =document.querySelector('.skill-progress>div');
 var skillcontainers=document.getElementById('skills-container');
 window.addEventListener('scroll,checkScroll);
-                        
-function checkScroll()
-
+var animation = false;
+ function initialiseBars(){
+  for(let bar of progressBars){
+    bar.style.width=0+'%'
+  }
+}
+function checkScroll(){
+var coordinates =skillsContainer.getBoundingClientRect();
+  if(!animationDone&&coordinates.top<window.innerHeight){
+    animationDone = true;
+    console.log('skills section visible');
+  }
+}
