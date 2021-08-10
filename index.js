@@ -32,7 +32,10 @@ var animation = false;
   for(let bar of progressBars){
     bar.style.width=0+'%'
   }
-}
+ initialiseBars();
+function  fillBars(){
+  for(let bar of progressBars){
+     bar.style.width=0+'%';
 function checkScroll(){
 var coordinates =skillsContainer.getBoundingClientRect();
   if(!animationDone&&coordinates.top<window.innerHeight){
