@@ -43,4 +43,14 @@ var coordinates =skillsContainer.getBoundingClientRect();
     console.log('skills section visible');
   }
 }
-
+/student function/
+ 
+ function createStudent(name,rollNo,marks){
+ var student={};
+ student.name= name;
+ student.rollNo  =rollNo;
+ student.marks=marks;
+ return student;
+ }
+ var student1= createStudent("abcd",15,50);
+ var student2 = createStudent("pqrs",20,77);   
