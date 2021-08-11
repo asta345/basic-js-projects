@@ -54,3 +54,12 @@ var coordinates =skillsContainer.getBoundingClientRect();
  }
  var student1= createStudent("abcd",15,50);
  var student2 = createStudent("pqrs",20,77);   
+
+ \write in a constructor\
+ function createStudent(name,rollNo,marks){
+   this.name=name;
+   this.rollName=rollName;
+   this.marks=marks;
+ }
+    var student = new createStudent("abcd",15,50);
+    
