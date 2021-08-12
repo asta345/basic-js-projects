@@ -71,3 +71,16 @@ class Vehicle{
   getprice(){
     return this.price;
 }
+\inhertiance\
+  class car extends Vehicle{
+ constructor(numDoors){
+   super(4,10000);
+   this.numDoors = numDoors;
+ }
+    printDescription(){
+      super.printDescription();
+      console.log("car",numdoors);
+    
+  }
+    var c= new car (40000,4);
+    console.log(c);
