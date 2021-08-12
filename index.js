@@ -62,4 +62,12 @@ var coordinates =skillsContainer.getBoundingClientRect();
    this.marks=marks;
  }
     var student = new createStudent("abcd",15,50);
-    
+\write a  class\
+class Vehicle{
+  constructor(numWheels, price){
+    this.numWheels =numWheels;
+    this.price=price;
+  }
+  getprice(){
+    return this.price;
+}
