@@ -84,3 +84,10 @@ class Vehicle{
   }
     var c= new car (40000,4);
     console.log(c);
+\ fetch details by using api using ajax\
+.get('https://dog.ceo/api/breeds/image/random',function(data){{
+  var imageurl= responseJson.message;
+     $('#dog-image').attr('src',imageurl);
+}});
+ 
+ $('#fetch-dog-image-button').click(fetchRandomDogImage);
