@@ -93,3 +93,23 @@ $.get('https://dog.ceo/api/breeds/image/random',function(_data){
 });
  
  $('#fetch-dog-image-button').click(fetchRandomDogImage);
+    
+    
+    /how var userLoggedIn = true;
+function checkeduser(){ 
+var promise = new Promise((resolve,reject) =>  { 
+	setTimeout( () => {
+		if(userLoggedIn){
+                resolve(suceessful);
+		}else{
+		reject();
+	}
+	},1000);
+	
+});
+return promise;
+}
+userLoggedIn.then((sucessmsg)=>{
+	console.log("sucess msg");
+}).catch(()=>{console.log("user logged in")});to write promises/
+    
